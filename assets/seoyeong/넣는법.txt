@@ -1,0 +1,14 @@
+[ 이서영 영상·이미지 넣는 곳 ]
+
+이 폴더(assets/seoyeong/)에 영상 파일을 넣으세요. 예:
+   movie.mp4      ← 동영상
+   poster.jpg     ← 영상 재생 전 보일 표지 이미지(선택)
+
+그 다음 seoyeong/index.html 파일을 열어 CONFIG 의 video 부분을 바꾸면 됩니다.
+
+▶ 내 영상 파일을 쓸 때:
+   video: { type:"file", src:"../assets/seoyeong/movie.mp4", poster:"../assets/seoyeong/poster.jpg" }
+
+▶ 유튜브 영상을 쓸 때(용량 큰 영상 추천):
+   video: { type:"youtube", id:"유튜브영상ID" }
+   - 유튜브 주소 watch?v=  뒤의 글자가 영상ID 입니다.

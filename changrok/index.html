@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="이창록 — 졸업 작품" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- ============================================================
+       ▼▼▼ 이창록 작품 정보 — 여기만 수정하면 됩니다 ▼▼▼
+       ============================================================ -->
+  <script>
+    var CONFIG = {
+      eyebrow: "GRADUATION EXHIBITION",   // 맨 위 작은 영문 문구
+      nameEn:  "LEE CHANGROK",            // 영문 이름 (원하면 비워도 됨)
+      title:   "작품 제목을 입력하세요",   // 작품 제목 (크게 표시)
+      name:    "",                         // 이름 (비우면 화면에 표시 안 됨)
+      subtitle:"",                         // 작은 부제 (비우면 표시 안 됨)
+
+      // 영상 설정 — 아래 둘 중 하나를 사용하세요
+      // (1) 유튜브:  { type:"youtube", id:"유튜브영상ID" }
+      // (2) 내 파일:  { type:"file", src:"../assets/changrok/movie.mp4", poster:"../assets/changrok/poster.jpg" }
+      video: {
+        // 예시 — 실제 영상으로 바꾸세요
+        type: "youtube", id: ""
+      },
+
+      caption: "",                         // 영상 아래 한 줄 설명 (없으면 비워두기)
+      description:                         // 작품 설명 (줄바꿈은 \n)
+        "여기에 작품 설명을 자유롭게 작성하세요.\n" +
+        "작품의 컨셉, 대지, 주제 등을 소개하면 좋습니다."
+    };
+  </script>
+  <!-- ▲▲▲ 여기까지 ▲▲▲ -->
+</head>
+<body>
+  <div class="topbar">
+    <span>이창록</span>
+    <span>ARCHITECTURE · 2026</span>
+  </div>
+
+  <section class="hero">
+    <p class="hero-eyebrow" id="eyebrow"></p>
+    <p class="hero-name-en" id="nameEn"></p>
+    <h1 class="hero-title" id="title"></h1>
+    <p class="hero-name" id="name"></p>
+    <p class="hero-sub" id="sub"></p>
+    <p class="scroll-hint">SCROLL ↓</p>
+  </section>
+
+  <section class="video-section">
+    <div class="video-frame" id="video-frame">
+      <div class="video-placeholder">
+        <span class="play">▶</span>
+        <span>영상이 곧 업로드됩니다</span>
+      </div>
+    </div>
+    <p class="video-caption" id="caption"></p>
+  </section>
+
+  <section class="about">
+    <div class="about-line"></div>
+    <p id="desc"></p>
+  </section>
+
+  <footer class="site-footer">
+    <p><span class="accent" id="footerName"></span> · 2026 건축학과 졸업전시</p>
+  </footer>
+
+  <script src="../js/exhibit.js"></script>
+</body>
+</html>
